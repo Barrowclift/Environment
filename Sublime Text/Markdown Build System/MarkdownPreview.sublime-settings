@@ -1,0 +1,40 @@
+{
+	"strip_yaml_front_matter": true,
+	"build_action": "browser",
+
+	"image_path_conversion": "base64",
+	"enabled_parsers": ["markdown"],
+
+	"enable_mathjax": true,
+	"enable_uml": false,
+
+	"enable_pygments": true,
+	"enable_highlight": true,
+
+	// "css": "/Users/Barrowclift/Desktop/assets/css/style.css",
+	// "allow_css_overrides": true,
+
+	"html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/markdown-header-template.html",
+	"skip_default_stylesheet": true,
+
+	"enabled_extensions": [
+		// Can all be referenced by "github"
+		"magiclink",
+		"delete",
+		"tasklist",
+		"githubemoji",
+		"headeranchor",
+		// "superfences" // UML (returns 404 from cloudflare)
+		//"nl2br" // Fuck everything about respecting line breaks in Markdown
+
+		"extra",
+		"toc",
+		"headerid",
+		"magiclink",
+		"meta",
+		"sane_lists",
+		"smarty",
+		"wikilinks",
+		"codehilite(guess_lang=False, pygments_style=monokai)" //linenums=True
+	]
+}

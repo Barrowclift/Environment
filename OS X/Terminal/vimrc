@@ -1,0 +1,132 @@
+"Help for creating this document is accredited to Kurt Schmidt and others from
+"dotfiles.org like asommer, defunkt, and davidlee. There's also Bram Moolenaar
+"who I thank for the great starting document
+
+set nocompatible
+
+" =========================== EDITTING SETUP ==========================
+
+" ------------- Backspace -------------
+" Os x backspace fix
+set backspace=indent,eol,start
+" Set t_kb (backspace key)
+fixdel
+
+" ---------------- Tabs ---------------
+" Old backups
+" set tabstop=3
+" set shiftwidth=3 " used to be 2
+
+" http://vim.wikia.com/wiki/Indent_with_tabs,_align_with_spaces"
+" set noet ci pi sts=0 sw=4 ts=4
+" Which is shorter version of...
+" set noexpandtab
+" set copyindent
+" set preserveindent
+" set softtabstop=0
+" set shiftwidth=4
+" set tabstop=4
+
+set noet sts=0 sw=4 ts=4
+set cindent
+set cinoptions=(0,u0,U0
+set smartindent
+  
+" --------------- Mouse ---------------
+if has("mouse")
+	set mouse=a
+endif
+
+" -------------- Various --------------
+" Various settings
+set incsearch    " Searches as you type
+set hlsearch     " Enable high lighted search
+set nowrap       " Do NOT wrap text
+set ruler        " Displays line number and character count in lower right hand corner of editor
+set history=50   " Keep 50 lines of command line history
+set showcmd      " Shows information bar at bottom of editor
+set autoindent   " Exactly what it sets, set it on
+
+" Text wrapping
+set textwidth=78 		" Sets the wrap width
+set formatoptions+=n	" While formatting text, recognize numbered lists
+set formatoptions+=tc	" Automatic line wrapping
+
+" File specific stuff
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
+" Backup directory
+if has("vms")
+	set nobackup
+else
+	set backup
+	set backupdir=/Users/Barrowclift/Documents/Computers/Terminal/Vim\ Backups/
+endif
+
+call plug#begin('~/.vim/plugged')
+" Make sure you use single quotes
+Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/vim-easy-align'
+" On-demand Loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+" Using git URL
+Plug 'http://github.com/junegunn/vim-github-dashboard.git'
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'go.weekly.2012-03-13', 'rtp': 'vim' }
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+call plug#end()
+
+" Unified color scheme (default: dark)
+" colo seoul256
+" Light color scheme
+" colo seoul256-light
+" Switch
+" set background=dark
+" set background=light
+
+" No fucking clue what this does, probably a relic from old .bashrc. No real reason to delete
+com VR :vertical resize 80
+
+" ============================ KEY BINDINGS ===========================
+
+" space = pagedown, - = pageup, RESEARCH
+noremap <Space> <PageDown>
+map <Tab><Tab> <C-W>w
+noremap - <PageUp>
+nnoremap <F5><F5> :set invhls hls?<CR>    " use f5f5 to toggle search hls
+nnoremap <F4><F4> :set invwrap wrap?<CR>  " use f4f4 to toggle wordwrap
+nnoremap <F2><F2> :vsplit<CR>
+nnoremap <F3><F3> <C-W>w
+set pastetoggle=<F2> " Shortcut instead of "set nopaste" / "set paste"
+
+"make hlsearch have a nice red background
+"hi Search term=reverse ctermbg=Red ctermfg=White guibg=Red guifg=White
+
+" ============================== FUNCTIONS ============================
+
+"function RubyEndToken ()
+"  let current_line = getline( '.' )
+"  let braces_at_end = '{\s*\(|\(,\|\s\|\w\)*|\s*\)\?$'
+"  let stuff_without_do = '^\s*\(class\|if\|unless\|begin\|case\|for\|module\|while\|until\|def\)'
+"  let with_do = 'do\s*\(|\(,\|\s\|\w\)*|\s*\)\?$'
+"
+"  if match(current_line, braces_at_end) >= 0
+"    return "\<CR>}\<C-O>O" 
+"  elseif match(current_line, stuff_without_do) >= 0
+"    " return "\<CR>end\<C-O>O
+"    return "\<CR>\<C-O>O" 
+"  elseif match(current_line, with_do) >= 0
+"    return "\<CR>\<C-O>O" 
+"  else
+"    return "\<CR>"
+"  endif
+"endfunction
+
+"imap <buffer> <CR> <C-R>=RubyEndToken()<CR>

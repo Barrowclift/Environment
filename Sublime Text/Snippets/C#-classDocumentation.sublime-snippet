@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+		<![CDATA[/*====================================================================================**/
+/// <summary>$1</summary>
+/// <author>Marc.Barrowclift</author>                          <date>07/2014</date>
+/*==============+===============+===============+===============+===============+======*/]]>
+	</content>
+	<tabTrigger>classDoc</tabTrigger>
+	<scope>source.cs</scope>
+</snippet>

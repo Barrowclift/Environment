@@ -1,0 +1,163 @@
+[
+
+// FORMATTING ------------------------------------------------------------------
+
+	// General Reindent (does not work well)
+	{
+		"keys": ["super+shift+r"],
+		"command": "reindent",
+		"args":
+		{
+			"single_line": false
+		}
+	},
+
+	// Java/Javascript Reindentation
+	{ "keys":
+		["alt+shift+r"],
+		"command": "js_format"
+	},
+
+	// Wrap Text Blocks
+	{
+		"keys": ["alt+shift+f"],
+		"command": "wrap_lines_plus"
+	},	
+
+	// Convert Spaces to Tabs
+	{
+		"keys": ["alt+shift+t"],
+		"command": "unexpand_tabs"
+	},
+
+	// Auto-close HTML Tags
+	{
+		"keys": [">"],
+		"command": "auto_close_tag",
+		"args":
+		{
+			"prefix": ">"
+		},
+		"context":
+		[
+			{
+				"key": "selector",
+				"operator": "equal",
+				"operand": "text.html meta.tag -string -punctuation.definition.tag.begin.html -meta.scope.between-tag-pair.html, text.xml meta.tag -string -punctuation.definition.tag.begin.xml -meta.scope.between-tag-pair.xml",
+				"match_all": true
+			},
+			{
+				"key": "preceding_text",
+				"operator": "not_regex_contains",
+				"operand": "(?:\\<(?:img|br|hr|meta|link|base|input)\\>[^<]*)|/$"
+			}
+		]
+	},
+
+	// Line and Tab when hitting enter between tags
+	{
+		"keys": ["enter"],
+		"command": "insert_snippet",
+		"args": {"contents": "\n\t$0\n"},
+		"context":
+		[
+			{
+				"key": "setting.auto_indent",
+				"operator": "equal",
+				"operand": true
+			},
+			{
+				"key": "selector",
+				"operator": "equal",
+				"operand": "meta.scope.between-tag-pair"
+			}
+		]
+	},
+
+// WORKSPACE -------------------------------------------------------------------
+
+	// Close project
+	{
+		"keys": ["super+shift+c"],
+		"command": "close_workspace"
+	},
+
+	// Hide Side Bar
+	{
+		"keys": ["super+b"],
+		"command": "toggle_side_bar"
+	},
+
+	// Open User Keybindings
+	{
+		"keys": ["super+."],
+		"command": "open_file",
+		"args":
+		{
+			"contents": "[\n	$0\n]\n",
+			"file": "${packages}/User/Default ($platform).sublime-keymap"
+		}
+	},
+
+	// Open Default Preferences
+	{
+		"keys": ["super+shift+,"],
+		"command": "open_file",
+		"args":
+		{
+			"contents": "[\n	$0\n]\n",
+			"file": "${packages}/Default/Preferences.sublime-settings"
+		}
+	},
+
+	// Open Default Keybindings
+	{
+		"keys": ["super+shift+."],
+		"command": "open_file",
+		"args":
+		{
+			"contents": "[\n	$0\n]\n",
+			"file": "${packages}/Default/Default ($platform).sublime-keymap"
+		}
+	},
+
+	// Open New Tab
+	{
+		"keys": ["super+t"],
+		"command": "new_file"
+	},
+
+	// Open New Window
+	{
+		"keys": ["super+n"],
+		"command": "new_window"
+	},
+
+// BUILD -----------------------------------------------------------------------
+
+	// Markdown preview
+	{
+		"keys": ["alt+m"],
+		"command": "markdown_preview",
+		"args":
+		{
+			"target": "browser",
+			"parser":"github"
+		}
+	},
+
+// FIXES -----------------------------------------------------------------------
+
+	// Fix strange "division" shortcut with mechanical keyboard
+	{
+		"keys": ["alt+/"],
+		"command": "toggle_comment"
+	},
+
+// MISC ------------------------------------------------------------------------
+
+	// So the second to last binding always has a comma
+	{
+		"zzz": null
+	}
+]

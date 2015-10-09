@@ -1,0 +1,114 @@
+{
+
+// EDITOR ----------------------------------------------------------------------
+	
+	// Tabs
+	"tab_size": 4,
+	"translate_tabs_to_spaces": false,
+	"translate_spaces_to_tabs": true,
+
+	// Autocomplete
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_id_class": true,
+
+	// Text Field
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"scroll_past_end": true,
+	"drag_text": false,
+	"word_wrap": "auto",
+
+	// Whitespace
+	"indent_subsequent_lines": false,
+	"trim_trailing_white_space_on_save": false,
+
+	// Brackets
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
+
+	// Display as binary
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.psd",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+
+// WORKSPACE -------------------------------------------------------------------
+
+	// Tabs
+	"enable_tab_scrolling": false,
+	"highlight_modified_tabs": true,
+	
+	// Minimap
+	"minimap_scroll_to_clicked_text": false,
+	"always_show_minimap_viewport": true,
+	
+	// Sidebar
+	"bold_folder_labels": true,
+	"folder_exculde_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"cvs",
+		".sass-cache",
+		".pycache"
+	],
+
+	// File Behaviors
+	"hot_exit": true,
+	"remember_open_files": true,
+	"open_files_in_new_window": false,
+
+	// Full Screen
+	"use_simple_full_screen": true,
+		
+// RENDERING -------------------------------------------------------------------
+
+	// Fixes that strange bug where the cursor was super large
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 0,
+
+	// Fonts
+	"font_size": 12,
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+
+	// GPU Buffer
+	"gpu_window_buffer": "auto",
+
+// PLUGINS ---------------------------------------------------------------------
+
+	// Wrapplus
+	"WrapPlus.break_long_words": true,
+	"WrapPlus.break_on_hyphens": true,
+
+// MISC ------------------------------------------------------------------------
+	"ignored_packages":
+	[
+		"Vintage",
+		"DocBlockr",
+		"Monokai Extended"
+	],
+
+	// So the second to last line always has a comma
+	"zzz": null
+}

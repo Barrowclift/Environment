@@ -1,0 +1,256 @@
+[
+
+// FORMATTING ------------------------------------------------------------------
+
+	// Java/Javascript Reindentation
+	{
+		"keys": ["super+shift+r"],
+		"command": "js_format"
+	},
+
+	// Convert Spaces to Tabs
+	{
+		"keys": ["super+shift+t"],
+		"command": "unexpand_tabs"
+	},
+
+	// Wrap Text Blocks
+	{
+		"keys": ["super+shift+f"],
+		"command": "wrap_lines_plus"
+	},
+
+	// Comment Out Selection
+	{
+		"keys": ["alt+/"],
+		"command": "toggle_comment"
+	},
+
+	// Reindent All Code
+	{
+		"keys": ["alt+shift+r"],
+		"command": "reindent",
+		"args":
+		{
+			"single_line": false
+		}
+	},
+
+	// Indent
+	{
+		"keys": ["alt+]"],
+		"command": "indent"
+	},
+
+	// Unindent
+	{
+		"keys": ["alt+["],
+		"command": "unindent"
+	},
+
+	// Auto-close HTML Tags
+	{
+		"keys": [">"],
+		"command": "auto_close_tag",
+		"args":
+		{
+			"prefix": ">"
+		},
+		"context":
+		[
+			{
+				"key": "selector",
+				"operator": "equal",
+				"operand": "text.html meta.tag -string -punctuation.definition.tag.begin.html -meta.scope.between-tag-pair.html, text.xml meta.tag -string -punctuation.definition.tag.begin.xml -meta.scope.between-tag-pair.xml",
+				"match_all": true
+			},
+			{
+				"key": "preceding_text",
+				"operator": "not_regex_contains",
+				"operand": "(?:\\<(?:img|br|hr|meta|link|base|input)\\>[^<]*)|/$"
+			}
+		]
+	},
+
+	// Paste and indent
+	{
+		"keys": ["alt+shift+v"],
+		"command": "paste_and_indent"
+	},
+
+// WORKSPACE -------------------------------------------------------------------
+
+	// Open New Tab
+	{ 
+		"keys": ["alt+t"],
+		"command": "new_file"
+	},
+
+	// Switch to Next Tab
+	{
+		"keys": ["alt+shift+]"],
+		"command": "next_view_in_stack"
+	},
+
+	// Switch to Previous Tab
+	{
+		"keys": ["alt+shift+["],
+		"command": "prev_view_in_stack"
+	},
+
+	// Open New Window
+	{
+		"keys": ["alt+n"],
+		"command": "new_window"
+	},
+
+	// Find Next Occurance
+	{
+		"keys": ["alt+d"],
+		"command": "find_under_expand"
+	},
+
+	// Find All
+	{
+		"keys": ["alt+shift+f"],
+		"command": "show_panel",
+		"args":
+		{
+			"panel": "find_in_files"
+		}
+	},
+
+	// Open User Preferences
+	{
+		"keys": ["alt+,"],
+		"command": "open_file",
+		"args":
+		{
+			"contents": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by file type specific settings.\n{\n	$0\n}\n",
+			"file": "${packages}/User/Preferences.sublime-settings"
+		}
+	},
+
+	// Open User Keybindings
+	{
+		"keys": ["alt+."],
+		"command": "open_file",
+		"args":
+		{
+			"contents": "[\n	$0\n]\n",
+			"file": "${packages}/User/Default ($platform).sublime-keymap"
+		}
+	},
+
+	// Open Default Preferences
+	{
+		"keys": ["alt+shift+,"],
+		"command": "open_file",
+		"args":
+		{
+			"file": "${packages}/Default/Preferences.sublime-settings"
+		}
+	},
+
+	// Open Default Keybindings
+	{
+		"keys": ["alt+shift+."],
+		"command": "open_file",
+		"args":
+		{
+			"file": "${packages}/Default/Default ($platform).sublime-keymap"
+		}
+	},
+
+	// Show/Hide Command Palette
+	{
+		"keys": ["alt+shift+p"],
+		"command": "show_overlay",
+		"args":
+		{
+			"overlay": "command_palette"
+		}
+	},
+
+	// Goto Definition
+	{
+		"keys": ["alt+g"],
+		"command": "goto_definition"
+	},
+
+	// Hide Side Bar
+	{
+		"keys": ["alt+b"],
+		"command": "toggle_side_bar"
+	},
+
+	// Show/Hide Console
+	{
+		"keys": ["ctrl+`"],
+		"command": "show_panel",
+		"args":
+		{
+			"panel": "console",
+			"toggle": true
+		}
+	},
+
+	// Two Columns
+	{
+		"keys": ["alt+ctrl+2"],
+		"command": "set_layout",
+		"args":
+		{
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0]
+		}
+	},
+
+	// One Column
+	{
+		"keys": ["alt+ctrl+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cells": [[0, 0, 1, 1]],
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0]
+		}
+	},
+
+	// Swap line up
+	{
+		"keys": ["alt+ctrl+up"],
+		"command": "swap_line_up"
+	},
+
+	// Swap line down
+	{
+		"keys": ["alt+ctrl+down"],
+		"command": "swap_line_down"
+	},
+
+	// Close Project
+	{
+		"keys": ["alt+shift+c"],
+		"command": "close_workspace"
+	},
+
+	// Expand to Line
+	{
+		"keys": ["alt+l"],
+		"command": "expand_selection",
+		"args":
+		{
+			"to": "line"
+		}
+	},
+
+// MISC ------------------------------------------------------------------------
+
+	// So the second to last binding always has a comma
+	{
+		"zzz": null
+	}
+]

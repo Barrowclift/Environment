@@ -1,0 +1,10 @@
+~	cd C:\Users\{HOME}
+rm	del /Q /E
+cp	copy
+
+e	start %_cwd
+kill	taskend /F ustation
+ps	tasklist | sort
+edit	subl
+touch	type NUL >
+mv	move /Q

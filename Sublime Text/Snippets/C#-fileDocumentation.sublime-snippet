@@ -1,0 +1,14 @@
+<snippet>
+	<content>
+		<![CDATA[/*--------------------------------------------------------------------------------------+
+|
+|     \$Source: ${1:FULL_PATH} \$
+|
+|  \$Copyright: (c) 2014 Bentley Systems, Incorporated. All rights reserved. \$
+|
++--------------------------------------------------------------------------------------*/
+]]>
+	</content>
+	<tabTrigger>fileDoc</tabTrigger>
+	<scope>source.cs</scope>
+</snippet>
