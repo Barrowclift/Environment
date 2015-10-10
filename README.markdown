@@ -32,8 +32,6 @@ I also rely heavily on Automator tasks for small tasks like [Merging PDFs](https
 Windows
 -------
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/screenshot.png">
-
 For the times when I do have to use Windows, I generally install [TCC/LE](https://jpsoft.com/tccle-cmd-replacement.html), which is more or less a marginally nicer version of the horrid Command Line program. Combined with [GNU CoreUtils for Windows](gnuwin32.sourceforge.net/packages/coreutils.htm) makes a somewhat tolerable command line experience.
 
 Sublime Text
