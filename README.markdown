@@ -45,8 +45,6 @@ The stylesheet I use for the build system is my own take on the wonderful [roryg
 
 <img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/screenshot-2.png">
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/screenshot-3.png">
-
 --------------------------------------
 
 For the actual system itself I use [Sublime Text](http://www.sublimetext.com), the [Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview) package with a keyboard shortcut to launch the build process, and [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended) for superior Markdown syntax highlighting.

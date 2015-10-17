@@ -11,9 +11,6 @@
 	"enable_pygments": true,
 	"enable_highlight": true,
 
-	// "css": "/Users/Barrowclift/Desktop/assets/css/style.css",
-	// "allow_css_overrides": true,
-
 	"html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/markdown-header-template.html",
 	"skip_default_stylesheet": true,
 
