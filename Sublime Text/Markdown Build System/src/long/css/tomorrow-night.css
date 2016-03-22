@@ -1,0 +1,95 @@
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+.codehilite-comment {
+  color: #969896;
+}
+
+/* Tomorrow Red */
+.codehilite-variable,
+.codehilite-attribute,
+.codehilite-tag,
+.codehilite-regexp,
+.ruby .codehilite-constant,
+.xml .codehilite-tag .codehilite-title,
+.xml .codehilite-pi,
+.xml .codehilite-doctype,
+.html .codehilite-doctype,
+.css .codehilite-id,
+.css .codehilite-class,
+.css .codehilite-pseudo {
+  color: #cc6666;
+}
+
+/* Tomorrow Orange */
+.codehilite-number,
+.codehilite-preprocessor,
+.codehilite-pragma,
+.codehilite-built_in,
+.codehilite-literal,
+.codehilite-params,
+.codehilite-constant {
+  color: #de935f;
+}
+
+/* Tomorrow Yellow */
+.ruby .codehilite-class .codehilite-title,
+.css .codehilite-rules .codehilite-attribute {
+  color: #f0c674;
+}
+
+/* Tomorrow Green */
+.codehilite-string,
+.codehilite-value,
+.codehilite-inheritance,
+.codehilite-header,
+.ruby .codehilite-symbol,
+.xml .codehilite-cdata {
+  color: #b5bd68;
+}
+
+/* Tomorrow Aqua */
+.codehilite-title,
+.css .codehilite-hexcolor {
+  color: #8abeb7;
+}
+
+/* Tomorrow Blue */
+.codehilite-function,
+.python .codehilite-decorator,
+.python .codehilite-title,
+.ruby .codehilite-function .codehilite-title,
+.ruby .codehilite-title .codehilite-keyword,
+.perl .codehilite-sub,
+.javascript .codehilite-title,
+.coffeescript .codehilite-title {
+  color: #81a2be;
+}
+
+/* Tomorrow Purple */
+.codehilite-keyword,
+.javascript .codehilite-function {
+  color: #b294bb;
+}
+
+.codehilite {
+  display: block;
+  overflow-x: auto;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .codehilite-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .codehilite-cdata {
+  opacity: 0.5;
+}

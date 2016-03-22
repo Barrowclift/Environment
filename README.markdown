@@ -39,17 +39,7 @@ Sublime Text
 
 ### Markdown Build System
 
-The stylesheet I use for the build system is my own take on the wonderful [roryg-ghostwriter](http://mixu.net/markdown-styles/#roryg_ghostwriter__new__) template provided at [mixu.net](mixu.net), please support their work.
-
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/screenshot-1.png">
-
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/screenshot-2.png">
-
---------------------------------------
-
 For the actual system itself I use [Sublime Text](http://www.sublimetext.com), the [Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview) package with a keyboard shortcut to launch the build process, and [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended) for superior Markdown syntax highlighting.
-
---------------------------------------
 
 To install yourself, install the necessary dependencies:
 
@@ -60,6 +50,50 @@ To install yourself, install the necessary dependencies:
 Once all those pieces are in place, download the `Markdown Build System` folder from this repository, copy the settings from `MarkdownPreview.sublime-settings` into your own MarkdownPreview Package Settings and change `html_template` to whatever path you wish `markdown-header-template.html` to live (I keep mine in `~/Library/Application Support/Sublime Text 3/Custom Setup`)
 
 Now, when you build Markdown HTML from any Markdown text document Markdown Preview will instead use the custom template and style you've downloaded!
+
+The following themes are included:
+
+#### Avenir
+
+Adapted from [jasonm23](https://github.com/jasonm23)'s [markdown css themes](https://github.com/jasonm23/markdown-css-themes).
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/avenir/preview.png">
+
+#### Long
+
+Based on [James Long](https://twitter.com/jlongster)'s [blog](http://jlongster.com) style.
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/long/preview.png">
+
+#### Scholarly
+
+Adapted from [scholarly markdown](http://scholarlymarkdown.com).
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/scholarly/preview.png">
+
+#### Sublime
+
+Custom, inspired by Sublime Text's Monokai color theme.
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/sublime/preview.png">
+
+#### Ulysses
+
+Adapted from Jonathan Poritsky's [Ulysses III Themes collection](http://www.candlerblog.com/2013/04/11/ulysses-iii-and-marked/).
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/ulysses/preview.png">
+
+#### Words
+
+Adapted from the [Recurse Center](https://www.recurse.com/)'s [Code Words](https://codewords.recurse.com) blog.
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/words/preview.png">
+
+#### Writ
+
+Adapted from [jasonm23](https://github.com/jasonm23)'s [markdown css themes](https://github.com/jasonm23/markdown-css-themes).
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/writ/preview.png">
 
 ### Snippets
 

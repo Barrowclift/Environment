@@ -1,0 +1,110 @@
+html { font-size: 62.5%; margin-top:2em;}
+html, body { height: 100%; }
+
+body {
+	font-family: "Avenir Next", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 17px;
+	line-height: 26px;
+	color: #F8F8F2;
+	width: 562px;
+	margin: auto;
+	background: #272822;
+	position: relative;
+	padding: 0 30px;
+}
+
+p,ul,ol,dl,table,pre { margin-bottom: 1em; }
+ul { margin-left: 20px; }
+a { text-decoration: none; cursor: pointer; color: #a6e22e; -webkit-transition: color .2s linear; transition: color .2s linear; }
+a:focus { outline: 1px dotted; }
+a:visited {  }
+a:hover, a:focus { color: #FD971F; text-decoration: none; }
+a *, button * { cursor: pointer; }
+hr { border: 1px solid #75715E; margin-top: 2em;margin-bottom:2em;}
+small { font-size: 90%; }
+input, select, button, textarea, option { font-family: "Lucida Grande", Arial, "Lucida Sans Unicode", Arial, Verdana, sans-serif; font-size: 100%; }
+button, label, select, option, input[type=submit] { cursor: pointer; }
+.group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .group {display: inline-block;}
+/* Hides from IE-mac \*/ * html .group {height: 1%;} .group {display: block;} /* End hide from IE-mac */
+sup { font-size: 80%; line-height: 1; vertical-align: super; }
+button::-moz-focus-inner { border: 0; padding: 1px; }
+span.amp { font-family: "Adelle Sans", "Trebuchet MS", Helvetica, sans-serif; font-weight: normal; font-style: italic; font-size: 1.2em; line-height: 0.8; }
+
+h1,h2,h3,h4,h5,h6 { 
+    line-height: 1.1; 
+    font-family: "Adelle Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h2 { font-size: 22pt; }
+h3 { font-size: 20pt; }
+h4 { font-size: 18pt; }
+h5 { font-size: 16pt; }
+h6 { font-size: 14pt; }
+
+::selection { background: hsla(54, 8%, 26%, 0.9); }
+::-moz-selection { background: hsla(54, 8%, 26%, 0.9); }
+
+h1 {
+	font-size: 28pt;
+	margin: 0 0 0.1em;
+	font-family: "Adelle Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1 a,
+h1 a:hover {
+	color: #d7af72;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+pre {
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	padding: 8px 10px;
+	border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	overflow-x: hidden;
+	line-height: 1.1em;
+	overflow: scroll;
+}
+
+pre > code {
+	overflow: hidden;
+    /* Fix for that awful, double scrollview thing in Windows */
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    max-width: initial;
+    line-height: inherit;
+    background-color: transparent;
+    word-break: normal;
+    white-space: pre;
+}
+
+.codehilite pre  {
+	background: rgba(0,0,0,0.3);
+}
+
+pre code {
+	font-size: 10pt;
+}
+
+.thumb { 
+    float:left;
+    margin: 10px;
+}
+
+code {
+	border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	background-color: hsla(54, 8%, 26%, 0.9);
+	padding-right:0.3em;
+	padding-left:0.3em;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}

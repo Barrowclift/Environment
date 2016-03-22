@@ -8,21 +8,26 @@
 	"enable_mathjax": true,
 	"enable_uml": false,
 
-	"enable_pygments": true,
-	"enable_highlight": true,
-
-	"html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/markdown-header-template.html",
 	"skip_default_stylesheet": true,
 
+	// TAGS: SMALL, LARGE, MASSIVE, NOTES, CODING-NOTES, OLD, MODERN
+
+
+	// MAIN
+	// =====================================================================
+
+
+	// -------- LONG --------
+	// SMALL, BLOG, MODERN
+	"html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/long/template.html",
+	"enable_highlight": true,
 	"enabled_extensions": [
-		// Can all be referenced by "github"
 		"magiclink",
 		"delete",
 		"tasklist",
 		"githubemoji",
 		"headeranchor",
-		// "superfences" // UML (returns 404 from cloudflare)
-		//"nl2br" // Fuck everything about respecting line breaks in Markdown
+		"nl2br",
 
 		"extra",
 		"toc",
@@ -32,6 +37,146 @@
 		"sane_lists",
 		"smarty",
 		"wikilinks",
-		"codehilite(guess_lang=False, pygments_style=monokai)" //linenums=True
-	]
+		"codehilite(guess_lang=False, pygments_style=emacs)"
+	],
+
+	// -------- SUBLIME --------
+	// SMALL, CODING-NOTES, MODERN
+	// "html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/sublime/template.html",
+	// "enable_highlight": true,
+	// "enabled_extensions": [
+	// 	"magiclink",
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	// 	"nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// 	"codehilite(guess_lang=False, pygments_style=monokai)"
+	// ],
+
+
+	// OTHERS
+	// =====================================================================
+
+
+	// -------- ULYSSES --------
+	// LARGE, BLOG, MODERN
+	// "html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/ulysses/template.html",
+	// "enable_highlight": true,
+	// "enabled_extensions": [
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	//  	"nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// 	"codehilite(guess_lang=False, pygments_style=monokai)"
+	// ],
+
+	// -------- WORDS --------
+	// MASSIVE, NOTES, OLD
+	// "html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/words/template.html",
+	// "enable_highlight": true,
+	// "enabled_extensions": [
+	// 	"magiclink",
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	// 	"nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// 	"codehilite(guess_lang=False, pygments_style=monokai)"
+	// ],
+
+	// -------- AVENIR --------
+	// SMALL, NOTES, OLD
+	// "html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/avenir/template.html",
+	// "enable_highlight": true,
+	// "enabled_extensions": [
+	// 	"magiclink",
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	//  "nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// 	"codehilite(guess_lang=False, pygments_style=monokai)"
+	// ],
+
+	// -------- SCHOLARLY --------
+	// LARGE, NOTES, OLD
+	// "html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/scholarly/template.html",
+	// "enable_highlight": true,
+	// "enabled_extensions": [
+	// 	"magiclink",
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	//  "nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// 	"codehilite(guess_lang=False, pygments_style=monokai)"
+	// ],
+
+	// -------- WRIT STYLE --------
+	// SMALL, BLOG, OLD
+	// "html_template": "/Users/Barrowclift/Library/Application Support/Sublime Text 3/Custom Setup/src/writ/template.html",
+	// "enabled_extensions": [
+	// 	"magiclink",
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	//  "nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// ]
 }

@@ -1,0 +1,155 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+html, body {
+    margin: 0;
+    padding: 0
+}
+.codehilite pre {
+    border: solid 1px #CCCCCC;
+    border-radius: 3px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+}
+body {
+    font-family: palatino, georgia, serif;
+    font-size: 20px;
+    background-color: #fcfcfc;
+    color: #272727;
+    line-height: 1.5em
+}
+main {
+    overflow-x: hidden
+}
+body {
+    width: 700px
+}
+body {
+    margin: 4em auto;
+    margin-top: 2em;
+}
+h1 {
+    margin-bottom: 6px
+}
+pre {
+    overflow: auto;
+    background-color: transparent;
+    border: 0;
+    padding: 0
+}
+code {
+    font-size: .9em;
+    white-space: nowrap
+}
+pre {
+    font-size: 16px;
+    margin: 0
+}
+pre code {
+    color: #93a1a1;
+    white-space: pre;
+    font-size: 1em
+}
+h1, h2, h3, h4 {
+    font-family: "adelle-sans", sans-serif;
+    font-weight: 700
+}
+h1, h2, h3, h4 {
+    color: #343434
+}
+h1 {
+    font-size: 33px;
+    line-height: 40px;
+}
+h2 {
+    font-size: 27px
+}
+h3 {
+    font-size: 23px
+}
+h4 {
+    font-size: 20px
+}
+a, a:active {
+    /*color: #0AA0D2;*/
+    color: #008024;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+    text-decoration: underline;
+}
+a:hover {
+    /*color: #0BDDF8;*/
+    color: #00CC39;
+}
+p {
+    margin: 1em 0;
+}
+button {
+    font-size: 18px
+}
+footer {
+    border-top: 1px solid #f0f0f0
+}
+@media screen and (max-width:900px) {
+    body {
+        width: auto;
+        margin: 2em 1em
+    }
+}
+@media screen and (max-width:500px) {
+    body {
+        margin: 1em
+    }
+}
+main {
+    position: relative;
+    padding-top: 1px
+}
+img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block
+}
+p {
+    margin: 30px 0
+}
+h2, h3, h4 {
+    position: relative;
+    padding-left: 1.25em;
+    margin-left: -1.25em
+}
+h2 .text-anchor, h3 .text-anchor,
+h4 .text-anchor {
+    display: none
+}
+h2:hover .text-anchor, h3:hover .text-anchor,
+h4:hover .text-anchor {
+    display: block
+}
+p, li {
+    position: relative
+}
+h2, h3, h4 {
+    margin-top: 2em
+}
+pre {
+    line-height:1.4em;
+}
+hr {
+    border:none;
+    background-color: #343434;
+    height: 2px;
+    background: #343434; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FCFCFC 0%, #343434 25%, #343434 50%, #343434 75%, #FCFCFC 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FCFCFC), color-stop(25%,#343434), color-stop(50%,#343434), color-stop(75%,#343434), color-stop(100%,#FCFCFC)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCFCFC', endColorstr='#FCFCFC',GradientType=1 ); /* IE6-9 */
+    margin: 3em 0;
+}
