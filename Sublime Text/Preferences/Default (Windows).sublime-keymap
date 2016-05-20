@@ -247,6 +247,18 @@
 		}
 	},
 
+	// Quick switch project
+	{
+		"keys": ["alt+ctrl+p"],
+		"command": "prompt_select_workspace"
+	},
+
+	// Close project
+	{
+		"keys": ["alt+ctrl+c"],
+		"command": "close_workspace"
+	},
+
 // MISC ------------------------------------------------------------------------
 
 	// So the second to last binding always has a comma

@@ -1,0 +1,43 @@
+/* LINKS ----------------------------------- */
+
+a {
+    color: #F68048;
+    text-decoration: none;
+
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+a:link {
+    color: #F68048;
+}
+a:visited {
+    color: #F68048;
+}
+a:hover {
+    color: #FFB963;
+
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+/* HIGHLIGHT COLOR ----------------------------------- */
+
+/* Safari */
+::selection {
+    background: #F68048;
+    color: white;
+}
+/* Firefox */
+::-moz-selection {
+    background: #F68048;
+    color: white;
+}
+
+/* ELEMENTS ----------------------------------- */
+
+footer {
+    background-color: #F68048;
+}
+h1 {
+    background-color: #F68048;
+}

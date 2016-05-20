@@ -141,15 +141,18 @@ pre {
 }
 hr {
     border:none;
-    background-color: #343434;
-    height: 2px;
-    background: #343434; /* Old browsers */
-    background: -moz-linear-gradient(left,  #FCFCFC 0%, #343434 25%, #343434 50%, #343434 75%, #FCFCFC 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FCFCFC), color-stop(25%,#343434), color-stop(50%,#343434), color-stop(75%,#343434), color-stop(100%,#FCFCFC)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* IE10+ */
-    background: linear-gradient(to right,  #FCFCFC 0%,#343434 25%,#343434 50%,#343434 75%,#FCFCFC 100%); /* W3C */
+    background-color: #CCCCCC;
+    height: 1px;
+    background: #CCCCCC; /* Old browsers */
+    background: -moz-linear-gradient(left,  #FCFCFC 0%, #CCCCCC 25%, #CCCCCC 50%, #CCCCCC 75%, #FCFCFC 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FCFCFC), color-stop(25%,#CCCCCC), color-stop(50%,#CCCCCC), color-stop(75%,#CCCCCC), color-stop(100%,#FCFCFC)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #FCFCFC 0%,#CCCCCC 25%,#CCCCCC 50%,#CCCCCC 75%,#FCFCFC 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #FCFCFC 0%,#CCCCCC 25%,#CCCCCC 50%,#CCCCCC 75%,#FCFCFC 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #FCFCFC 0%,#CCCCCC 25%,#CCCCCC 50%,#CCCCCC 75%,#FCFCFC 100%); /* IE10+ */
+    background: linear-gradient(to right,  #FCFCFC 0%,#CCCCCC 25%,#CCCCCC 50%,#CCCCCC 75%,#FCFCFC 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCFCFC', endColorstr='#FCFCFC',GradientType=1 ); /* IE6-9 */
     margin: 3em 0;
+}
+.task-list-item {
+    list-style-type: none;
 }
