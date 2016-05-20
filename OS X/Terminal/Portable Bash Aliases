@@ -14,10 +14,6 @@
 # 1.  NETWORKING
 # ==============================================================================
 
-alias pi='ssh ${PI}'
-# Other networking aliases withheld from Github copy
-
-alias whichDNS='nslookup apple.com'
 alias simpleServer='python3 -m http.server'
 
 # ==============================================================================
@@ -67,32 +63,15 @@ alias f='open -a Finder ./'
 # 4.  THIRD-PARTY COMMANDS
 # ==============================================================================
 
-alias ocr='tesseract'
-alias ocrAllTifs="for i in *.tif ; do tesseract $i $i.txt; done;"
-
 alias haskell='ghci'
-alias edit='subl'
 alias sql='sqlite3'
-
-alias fuck='thefuck'
-alias tetris='sedtris.sh'
 
 # ==============================================================================
 # 5.  UTILITY COMMANDS
 # ==============================================================================
-
-# Quicker reboots and shutdowns
-alias shutdown="sudo shutdown -h now"
-alias reboot="sudo reboot"
-alias restart="sudo reboot"
 
 # Print out every path that makes up $PATH
 alias path='echo -e ${PATH//:/\\n}'
 
 # Reload bash_profile
 alias source='source ~/.bash_profile'
-
-# Alert Tone
-alias tone='afplay /System/Library/PrivateFrameworks/ToneLibrary.framework/Versions/A/Resources/AlertTones/Modern/calendar_alert_chord.caf'
-# Terminal Notifications
-alias notify='/Users/mbarrowclift/Applications/terminal-notifier/terminal-notifier.app/Contents/MacOS/terminal-notifier -message "Process complete" | tone'

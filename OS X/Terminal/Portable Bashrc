@@ -36,13 +36,7 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 # Brew
 export PATH=/usr/local/sbin:$PATH
-# Applications 
-export PATH=/Users/Barrowclift/Applications/Links:$PATH
-# Git
-export PATH=/usr/local/git/bin:$PATH
 
-# Java Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/
 # Java Classpath
 export CLASSPATH=$CLASSPATH:/usr/share/java/*
 
@@ -78,15 +72,32 @@ export RED='\[\033[0;31m\]'
 export CYAN='\[\033[0;36m\]'
 export BLUE='\[\033[0;34m\]'
 export NORMAL='\[\033[00m\]'
-export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
+export GREEN='\[\033[0;32m\]'
+export YELLOW='\[\033[0;33m\]'
+export RESET='\[\033[0m\]'
 
-
-# LOCATIONS
-# ----------------------------------------------
-# Raspberry Pi local login
-export PI="sparky@10.0.1.117"
-export SPARKY=$PI
-# Other locations withheld from Github copy
+# Thanks to Michal Kottman for his method of showing git branches in the
+# prompt: https://gist.github.com/mkottman/1936195
+PS_LINE=`printf -- ' ' {1..200}`
+function parse_git_branch {
+	PS_BRANCH=''
+	PS_FILL=${PS_LINE:0:$COLUMNS}
+	if [ -d .svn ]; then
+		PS_BRANCH="(svn r$(svn info|awk '/Revision/{print $2}'))"
+		return
+	elif [ -f _FOSSIL_ -o -f .fslckout ]; then
+		PS_BRANCH="(fossil $(fossil status|awk '/tags/{print $2}')) "
+		return
+	fi
+	ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+	PS_BRANCH="(git ${ref#refs/heads/}) "
+}
+PROMPT_COMMAND=parse_git_branch
+PS_INFO="${CYAN}\w"
+PS_GIT="${YELLOW}\$PS_BRANCH"
+export PS1="\${PS_FILL}\[\033[0G\]${PS_INFO} ${PS_GIT}\n${RED}\$${RESET} "
+# Version sans git
+# export PS1="Shteve:${CYAN}\w${RED}\n\$ ${NORMAL}"
 
 
 # VARIOUS

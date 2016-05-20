@@ -25,9 +25,7 @@ filetype plugin indent on
 set wildmenu			" Tab to complete in command line
 set lazyredraw			" Redraw only when we need to
 
-set textwidth=78 		" Sets the wrap width
 set formatoptions+=n	" While formatting text, recognize numbered lists
-"set formatoptions+=tc	" Automatic line wrapping
 
 
 " Spaces & Tabs ---------------------------
@@ -35,7 +33,7 @@ set noexpandtab			" Never convert tabs to spaces
 set softtabstop=4		" The number of columns indented when editing
 set tabstop=4			" The number of columns a tab is counted for
 set shiftwidth=4		" How many columns indented
-
+set backspace=indent,eol,start	" Make backspace work like all other apps
 
 " Colors ----------------------------------
 syntax enable
@@ -80,3 +78,5 @@ else
 	set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 	set writebackup
 endif
+
+set viminfo+=n~/.vim/viminfo
