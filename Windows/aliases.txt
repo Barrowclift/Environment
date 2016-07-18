@@ -1,4 +1,4 @@
-~	cd C:\Users\{HOME}
+~	cd C:\Users\${HOME}
 rm	del /Q /E
 cp	copy
 

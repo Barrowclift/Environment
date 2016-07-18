@@ -34,6 +34,21 @@ Windows
 
 For the times when I do have to use Windows, I generally install [TCC/LE](https://jpsoft.com/tccle-cmd-replacement.html), which is more or less a marginally nicer version of the horrid Command Line program. Combined with [GNU CoreUtils for Windows](gnuwin32.sourceforge.net/packages/coreutils.htm) makes a somewhat tolerable command line experience.
 
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/tcc.png">
+
+To try it out yourself:
+
+1. Download and install latest [TCC/LE](https://jpsoft.com/tccle-cmd-replacement.html).
+2. Download and install latest [GNU CoreUtils for Windows](gnuwin32.sourceforge.net/packages/coreutils.htm) and put somewhere on your system (I put mine in `C:\Program Files\JPSoft\TCCLE14x64\`)
+3. Download the following files from this repo and put them somewhere on your system (I put mine in `C:\Program Files\JPSoft\TCCLE14x64\`).
+	* Download `aliases.txt` and change the value of "~" to the full path to your home directory (For example, `C:\Users\Barrowclift\`)
+	* Download `batrc.bat` and edit your Path accordingly. Also edit the alias path to point to wherever you decided to put `aliases.txt`.
+4. Download `TCMD.INI` from this repo and put in `C:\Program Files\JPSoft\TCCLE14x64\` (or, if you did a custom install of TCC/LE, wherever you put the program files directory). Change the history log path variable to somewhere on your system.
+5. You're almost there! Right click the TCC/LE application and click "Properties".
+6. Change the "Target" to `"C:\Program Files\JPSoft\TCCLE14x64\tcc.exe" /k "C:\Program Files\JPSoft\TCCLE14x64\batrc.bat"`, changing your paths for custom installs as necessary
+7. Change the "Start in" to `"C:\Users\MyUsername"`, or wherever you want new windows to open in by default.
+8. You're done! Launch TCC/LE, right click the menu bar and click "Properties" to change font size, window dimensions, and base colors as you like. Also, enter `option` in the command line to launch a different, more detailed usage options window should you want to change my prefered options in the provided `TCMD.INI` file.
+
 Sublime Text
 ------------
 
