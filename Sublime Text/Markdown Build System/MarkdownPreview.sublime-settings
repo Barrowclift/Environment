@@ -16,10 +16,8 @@
 	// MAIN
 	// =====================================================================
 
-
-	// -------- LONG --------
-	// SMALL, BLOG, MODERN
-	"html_template": "${YOUR_PATH_HERE}/src/long/template.html",
+	// -------- BARROWCLIFT --------
+	"html_template": "${YOUR_PATH_HERE}/src/barrowclift/template.html",
 	"enable_highlight": true,
 	"enabled_extensions": [
 		"magiclink",
@@ -37,8 +35,31 @@
 		"sane_lists",
 		"smarty",
 		"wikilinks",
-		"codehilite(guess_lang=False, pygments_style=emacs)"
+		"codehilite(guess_lang=False, pygments_style=monokai)"
 	],
+
+	// -------- LONG --------
+	// SMALL, BLOG, MODERN
+	// "html_template": "${YOUR_PATH_HERE}/src/long/template.html",
+	// "enable_highlight": true,
+	// "enabled_extensions": [
+	// 	"magiclink",
+	// 	"delete",
+	// 	"tasklist",
+	// 	"githubemoji",
+	// 	"headeranchor",
+	// 	"nl2br",
+
+	// 	"extra",
+	// 	"toc",
+	// 	"headerid",
+	// 	"magiclink",
+	// 	"meta",
+	// 	"sane_lists",
+	// 	"smarty",
+	// 	"wikilinks",
+	// 	"codehilite(guess_lang=False, pygments_style=emacs)"
+	// ],
 
 	// -------- SUBLIME --------
 	// SMALL, CODING-NOTES, MODERN

@@ -41,13 +41,16 @@ To force a line break, put two spaces and a newline (return) at the end of the l
 	These lines  
 	will break
 
-{% highlight java %}
+Here's something else
+
+```java
 /** My test class */
 public class Test {
 	public static void main(String[] args) {
 		System.out.println("Hello, world!");
 	}
-}{% endhighlight %}
+}
+```
 
 ### Strong and Emphasize
 

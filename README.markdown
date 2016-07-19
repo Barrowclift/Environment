@@ -74,6 +74,12 @@ Adapted from [jasonm23](https://github.com/jasonm23)'s [markdown css themes](htt
 
 <img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/avenir/preview.png">
 
+#### Barrowclift
+
+Adapted from [my own website's theme](http://barrowclift.me), my default markdown style.
+
+<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/barrowclift/preview.png">
+
 #### Long
 
 Based on [James Long](https://twitter.com/jlongster)'s [blog](http://jlongster.com) style.
