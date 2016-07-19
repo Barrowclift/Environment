@@ -3,8 +3,8 @@ Environment
 
 This is a small collection of my various preferences, customizations, and shortcuts used across the various environments I work in.
 
-OS X
-----
+macOS
+-----
 
 ### Finder
 
@@ -15,7 +15,7 @@ There are two fantastic utilities I rely on heavily in my day-to-day computing:
 1. [Open in Sublime](https://github.com/pjv/open-in-sublime/wiki) - Opens any given folder(s) or file(s) currently selected in [Sublime Text](http://www.sublimetext.com)
 2. [Go2Shell](http://zipzapmac.com/Go2Shell) - Opens a new Terminal window at the current location
 
-While these utilities are indispensable to my workflow the icons they come with sadly do not match the other standard OS X / Finder buttons and look horribly out of place. To help make them fit in better with the surrounding buttons I have made my own, both in the "Yosemite" and "El Capitan" style. Follow the steps [here](http://lifehacker.com/5897796/how-to-customize-any-folder-or-app-icon-using-any-image-in-os-x) to use them yourself.
+While these utilities are indispensable to my workflow the icons they come with sadly do not match the other standard macOS / Finder buttons and look horribly out of place. To help make them fit in better with the surrounding buttons I have made my own, both in the "Yosemite" and "El Capitan" style. Follow the steps [here](http://lifehacker.com/5897796/how-to-customize-any-folder-or-app-icon-using-any-image-in-os-x) to use them yourself.
 
 ### Terminal
 
@@ -31,6 +31,8 @@ I also rely heavily on Automator tasks for small tasks like [Merging PDFs](https
 
 Windows
 -------
+
+### Command Line
 
 For the times when I do have to use Windows, I generally install [TCC/LE](https://jpsoft.com/tccle-cmd-replacement.html), which is more or less a marginally nicer version of the horrid Command Line program. Combined with [GNU CoreUtils for Windows](gnuwin32.sourceforge.net/packages/coreutils.htm) makes a somewhat tolerable command line experience.
 
@@ -48,6 +50,10 @@ To try it out yourself:
 6. Change the "Target" to `"C:\Program Files\JPSoft\TCCLE14x64\tcc.exe" /k "C:\Program Files\JPSoft\TCCLE14x64\batrc.bat"`, changing your paths for custom installs as necessary
 7. Change the "Start in" to `"C:\Users\MyUsername"`, or wherever you want new windows to open in by default.
 8. You're done! Launch TCC/LE, right click the menu bar and click "Properties" to change font size, window dimensions, and base colors as you like. Also, enter `option` in the command line to launch a different, more detailed usage options window should you want to change my prefered options in the provided `TCMD.INI` file.
+
+### Keyboard Shortcuts
+
+I use [AutoHotKey](https://autohotkey.com) to edit the standard Windows shortcuts to match the macOS's shortcuts since they're *much* easier to perform. The provided script changes Windows text selection, save, cut, copy, paste, and undo/redo shortcuts to macOS's standards. Install [AutoHotKey](https://autohotkey.com), run it, right click it's icon in the Notification Area, then click "Edit this Script". Copy and paste the contents of [Modified_hotkey.ahk](https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/Modified_hotkey.ahk)) into the new window, save, then right click the icon again and click "Reload This Script". You're comfortable shortcuts should now work!
 
 Sublime Text
 ------------
