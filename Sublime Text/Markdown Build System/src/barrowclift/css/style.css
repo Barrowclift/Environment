@@ -709,6 +709,9 @@ input:required {
     -o-box-shadow: none;
     box-shadow: none;
 }
+.task-list-item input[type="checkbox"] {
+    margin-bottom: 0;
+}
 
 /* Smooth hover-transition buttons & Generic round button (RSS, Archive, etc.) */
 .button-hover, .button-default,
