@@ -8,7 +8,7 @@ macOS
 
 ### Finder
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/OS%20X/Finder/screenshot.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Finder/screenshot.png">
 
 There are two fantastic utilities I rely on heavily in my day-to-day computing:
 
@@ -19,15 +19,29 @@ While these utilities are indispensable to my workflow the icons they come with 
 
 ### Terminal
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/OS%20X/Terminal/screenshot.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Terminal/screenshot.png">
 
 I adore the Monokai color scheme used in [Sublime Text](http://www.sublimetext.com) and decided to style my Terminal windows after it. I also use the vim Monokai style created by [tomasr, which can be found here](https://github.com/tomasr/molokai) and installed as a vim plugin.
 
 Also included is a bunch of useful bash aliases and functions which are described in further detail in my article [here](http://barrowclift.me/Post/Making-Terminal-Better/).
 
+### Sip
+
+Snagging any color shown on your display at any given time I find indispensable. Regrettably, I find Sip’s default menu bar icon to be rather garish and 
+
+The ability to snag any color shown on your display at any given time is indispensable to my design work. Sip’s default menu bar icon, however, is far too loud for my tastes.
+
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Default.png">
+
+To remedy this, I modified their assets to be far more pleasing to the eye. You can see it in action here.
+
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Modified.png">
+
+To install yourself, download the replacement assets `.car`. Right click Sip and select “Show Package Contents”. From there, navigate to “Contents” > “Resources” and replace the existing `Assets.car` file.
+
 ### Automator
 
-I also rely heavily on Automator tasks for small tasks like [Merging PDFs](https://raw.githubusercontent.com/Barrowclift/Environment/master/OS%20X/Automator%20Services/Merge%20PDFs.workflow), [Splitting PDFs into PNGs](https://raw.githubusercontent.com/Barrowclift/Environment/master/OS%20X/Automator%20Services/Split%20PDF%20into%20PNGs.workflow), [Making PDFs from Selected Images](https://raw.githubusercontent.com/Barrowclift/Environment/master/OS%20X/Automator%20Services/Make%20PDF%20from%20images.workflow), etc. You can find those and some other useful utilities there.
+I also rely heavily on Automator tasks for small tasks like [Merging PDFs](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Merge%20PDFs.workflow), [Splitting PDFs into PNGs](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Split%20PDF%20into%20PNGs.workflow), [Making PDFs from Selected Images](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Make%20PDF%20from%20images.workflow), etc. You can find those and some other useful utilities there.
 
 Windows
 -------
@@ -36,16 +50,16 @@ Windows
 
 For the times when I do have to use Windows, I generally install [TCC/LE](https://jpsoft.com/tccle-cmd-replacement.html), which is more or less a marginally nicer version of the horrid Command Line program. Combined with [GNU CoreUtils for Windows](gnuwin32.sourceforge.net/packages/coreutils.htm) makes a somewhat tolerable command line experience.
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/tcc.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Windows/tcc.png">
 
 To try it out yourself:
 
 1. Download and install latest [TCC/LE](https://jpsoft.com/tccle-cmd-replacement.html).
 2. Download and install latest [GNU CoreUtils for Windows](gnuwin32.sourceforge.net/packages/coreutils.htm) and put somewhere on your system (I put mine in `C:\Program Files\JPSoft\TCCLE14x64\`)
 3. Download the following files from this repo and put them somewhere on your system (I put mine in `C:\Program Files\JPSoft\TCCLE14x64\`).
-	* Download [aliases.txt](https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/aliases.txt) and change the value of "~" to the full path to your home directory (For example, `C:\Users\Barrowclift\`)
-	* Download [batrc.bat](https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/batrc.bat) and edit your Path accordingly. Also edit the alias path to point to wherever you decided to put `aliases.txt`.
-4. Download [TCMD.INI](https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/TCMD.INI) from this repo and put in `C:\Program Files\JPSoft\TCCLE14x64\` (or, if you did a custom install of TCC/LE, wherever you put the program files directory). Change the history log path variable to somewhere on your system.
+	* Download [aliases.txt](https://raw.githubusercontent.com/barrowclift/Environment/master/Windows/aliases.txt) and change the value of "~" to the full path to your home directory (For example, `C:\Users\Barrowclift\`)
+	* Download [batrc.bat](https://raw.githubusercontent.com/barrowclift/Environment/master/Windows/batrc.bat) and edit your Path accordingly. Also edit the alias path to point to wherever you decided to put `aliases.txt`.
+4. Download [TCMD.INI](https://raw.githubusercontent.com/barrowclift/Environment/master/Windows/TCMD.INI) from this repo and put in `C:\Program Files\JPSoft\TCCLE14x64\` (or, if you did a custom install of TCC/LE, wherever you put the program files directory). Change the history log path variable to somewhere on your system.
 5. You're almost there! Right click the TCC/LE application and click "Properties".
 6. Change the "Target" to `"C:\Program Files\JPSoft\TCCLE14x64\tcc.exe" /k "C:\Program Files\JPSoft\TCCLE14x64\batrc.bat"`, changing your paths for custom installs as necessary
 7. Change the "Start in" to `"C:\Users\MyUsername"`, or wherever you want new windows to open in by default.
@@ -53,7 +67,7 @@ To try it out yourself:
 
 ### Keyboard Shortcuts
 
-I use [AutoHotKey](https://autohotkey.com) to edit the standard Windows shortcuts to match the macOS's shortcuts since they're *much* easier to perform. The provided script changes Windows text selection, save, cut, copy, paste, and undo/redo shortcuts to macOS's standards. Install [AutoHotKey](https://autohotkey.com), run it, right click it's icon in the Notification Area, then click "Edit this Script". Copy and paste the contents of [Modified_hotkey.ahk](https://raw.githubusercontent.com/Barrowclift/Environment/master/Windows/Modified_hotkey.ahk)) into the new window, save, then right click the icon again and click "Reload This Script". You're comfortable shortcuts should now work!
+I use [AutoHotKey](https://autohotkey.com) to edit the standard Windows shortcuts to match the macOS's shortcuts since they're *much* easier to perform. The provided script changes Windows text selection, save, cut, copy, paste, and undo/redo shortcuts to macOS's standards. Install [AutoHotKey](https://autohotkey.com), run it, right click it's icon in the Notification Area, then click "Edit this Script". Copy and paste the contents of [Modified_hotkey.ahk](https://raw.githubusercontent.com/barrowclift/Environment/master/Windows/Modified_hotkey.ahk)) into the new window, save, then right click the icon again and click "Reload This Script". You're comfortable shortcuts should now work!
 
 Sublime Text
 ------------
@@ -78,49 +92,49 @@ The following themes are included:
 
 Adapted from [jasonm23](https://github.com/jasonm23)'s [markdown css themes](https://github.com/jasonm23/markdown-css-themes).
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/avenir/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/avenir/preview.png">
 
 #### Barrowclift
 
 Adapted from [my own website's theme](http://barrowclift.me), my default markdown style.
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/barrowclift/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/barrowclift/preview.png">
 
 #### Long
 
 Based on [James Long](https://twitter.com/jlongster)'s [blog](http://jlongster.com) style.
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/long/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/long/preview.png">
 
 #### Scholarly
 
 Adapted from [scholarly markdown](http://scholarlymarkdown.com).
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/scholarly/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/scholarly/preview.png">
 
 #### Sublime
 
 Custom, inspired by Sublime Text's Monokai color theme.
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/sublime/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/sublime/preview.png">
 
 #### Ulysses
 
 Adapted from Jonathan Poritsky's [Ulysses III Themes collection](http://www.candlerblog.com/2013/04/11/ulysses-iii-and-marked/).
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/ulysses/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/ulysses/preview.png">
 
 #### Words
 
 Adapted from the [Recurse Center](https://www.recurse.com/)'s [Code Words](https://codewords.recurse.com) blog.
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/words/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/words/preview.png">
 
 #### Writ
 
 Adapted from [jasonm23](https://github.com/jasonm23)'s [markdown css themes](https://github.com/jasonm23/markdown-css-themes).
 
-<img src="https://raw.githubusercontent.com/Barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/writ/preview.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/Sublime%20Text/Markdown%20Build%20System/src/writ/preview.png">
 
 ### Snippets
 
