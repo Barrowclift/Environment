@@ -37,7 +37,7 @@ To remedy this, I modified their assets to be far more pleasing to the eye. You 
 
 <img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Modified.png">
 
-To install yourself, download the replacement assets `.car`. Right click Sip and select “Show Package Contents”. From there, navigate to “Contents” > “Resources” and replace the existing `Assets.car` file.
+To install yourself, first [download the replacement assets](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Assets.car). Right click Sip and select “Show Package Contents”. From there, navigate to “Contents” > “Resources” and replace the existing `Assets.car` file.
 
 ### Automator
 
