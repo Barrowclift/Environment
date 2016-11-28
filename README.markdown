@@ -27,17 +27,27 @@ Also included is a bunch of useful bash aliases and functions which are describe
 
 ### Sip
 
-Snagging any color shown on your display at any given time I find indispensable. Regrettably, I find Sip’s default menu bar icon to be rather garish and 
-
 The ability to snag any color shown on your display at any given time is indispensable to my design work. Sip’s default menu bar icon, however, is far too loud for my tastes.
 
-<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Default.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Sip/Default.png">
 
 To remedy this, I modified their assets to be far more pleasing to the eye. You can see it in action here.
 
-<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Modified.png">
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Sip/Modified.png">
 
-To install yourself, first [download the replacement assets](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Sip/Assets.car). Right click Sip and select “Show Package Contents”. From there, navigate to “Contents” > “Resources” and replace the existing `Assets.car` file.
+To install yourself, first [download the replacement assets](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Sip/Assets.car). Right click Sip and select “Show Package Contents”. From there, navigate to “Contents” > “Resources” and replace the existing `Assets.car` file.
+
+### Enterprise Menu Bar Icons
+
+Pulse Secure and Symantec QuickMenu's default menu bar icons on macOS are absolutely garish and completely ignore the guidelines outlined by Apple for menu bar icon design.
+
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Pulse%20Secure/before.png">
+
+Thankfully, you don't have to stare at those unsightly things all day at work, you can use these substitutes instead:
+
+<img src="https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Pulse%20Secure/after.png">
+
+To install yourself, first [download the Pulse Secure](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Pulse%20Secure/) and [Symantec QuickMenu](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Menu%20Bar%20Icons/Symantec%20QuickMenu/) replacement resources, then replace Pulse's default resources at `Pulse Secure.app/Contents/Plugins/JamUI/PulseTray.app/Contents/Resources` and Symantec's default resources at `/Library/Application Support/Symantec/SymQuickMenu/QuickMenuManager.plugIn/Contents/Resources` and reboot.
 
 ### Automator
 
