@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/${1:POST_TITLE}/${2:IMAGE}){: .edge-to-edge}]({{ site.baseurl }}/Images/Assets/${1:POST_TITLE}/${2:IMAGE} "${3:HOVER_TEXT}")
-</figure>${4}
-]]></content>
-	<tabTrigger>edgetoedge</tabTrigger>
-	<scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

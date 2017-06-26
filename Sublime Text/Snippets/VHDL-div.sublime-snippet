@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
--------------------------------------------------------------
-]]></content>
-	<tabTrigger>div</tabTrigger>
-	<scope>source.vhdl</scope>
-</snippet>

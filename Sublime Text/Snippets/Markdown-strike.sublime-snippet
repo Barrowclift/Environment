@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<del>${1}</del>${2}
-]]></content>
-	<tabTrigger>strike</tabTrigger>
-	<scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-![]({{ site.baseurl }}/Images/Assets/${1:POST_TITLE}/${2:IMAGE} "${3:HOVER_TEXT}")${4}
-]]></content>
-  <tabTrigger>image</tabTrigger>
-  <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

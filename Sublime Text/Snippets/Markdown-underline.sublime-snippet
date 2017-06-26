@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<u>${1}</u>${2}
-]]></content>
-	<tabTrigger>underline</tabTrigger>
-	<scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

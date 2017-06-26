@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    {{ HEAD }}
+    <link rel="stylesheet" type="text/css" href="${WHEREVER_YOU_WANT}/src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="wrap">
+		<div id="content" class="center">
+			<main>
+				{{ BODY }}
+			</main>
+			<script>
+			var elements = document.getElementsByTagName("pre");
+			for (var i = 0, element; element = elements[i++];) {
+				var lines = element.textContent.split('\n');
+				console.log(lines);
+				var count = 0;
+				for (var j = 0, l = lines.length; j < l; j++) {
+					if (lines[j] != "") {
+						count = count + 1;
+					}
+				}
+				if (count == 1) {
+					element.className += " wrap";
+				}
+			}
+			</script>
+		</div>
+	</div>
+</body>
+</html>

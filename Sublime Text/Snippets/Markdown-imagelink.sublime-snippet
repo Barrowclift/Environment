@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<figure markdown="1">
-[![]({{ site.baseurl }}/Images/Assets/${1:POST_TITLE}/${2:IMAGE}){: .${3:IMAGE TYPE}}]({{ site.baseurl }}/Images/Assets/${1:POST_TITLE}/${2:IMAGE} "${4:HOVER_TEXT}")
-</figure>${5}
-]]></content>
-	<tabTrigger>imagelink</tabTrigger>
-	<scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

@@ -10,6 +10,7 @@
 	// Autocomplete
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
 	"auto_id_class": true,
 
 	// Text Field
@@ -69,6 +70,43 @@
 		".sass-cache",
 		".pycache"
 	],
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		".gitignore",
+		".project",
+		".classpath"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"cvs",
+		".sass-cache",
+		".pycache",
+		".settings",
+		"target"
+	],
 
 	// File Behaviors
 	"hot_exit": true,
@@ -104,9 +142,7 @@
 // MISC ------------------------------------------------------------------------
 	"ignored_packages":
 	[
-		"Vintage",
-		"DocBlockr",
-		"Monokai Extended"
+		"Vintage"
 	],
 
 	// So the second to last line always has a comma

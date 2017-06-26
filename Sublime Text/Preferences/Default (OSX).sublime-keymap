@@ -54,24 +54,31 @@
 		]
 	},
 
-	// Line and Tab when hitting enter between tags
+	// Substitute em-dashes character with unicode representation when editing markdown or HTML
 	{
-		"keys": ["enter"],
+		"keys": ["alt+-"],
 		"command": "insert_snippet",
-		"args": {"contents": "\n\t$0\n"},
-		"context":
-		[
-			{
-				"key": "setting.auto_indent",
-				"operator": "equal",
-				"operand": true
-			},
-			{
-				"key": "selector",
-				"operator": "equal",
-				"operand": "meta.scope.between-tag-pair"
-			}
-		]
+		"args": {
+			"contents": "&#8212;"
+		},
+		"context": [{
+			"key": "selector",
+			"operator": "equal",
+			"operand": "text.html.markdown, text.html"
+		}]
+	},
+	// Substitute ampersand character with unicode representation when editing markdown or HTML
+	{
+		"keys": ["alt+&"],
+		"command": "insert_snippet",
+		"args": {
+			"contents": "&amp;"
+		},
+		"context": [{
+			"key": "selector",
+			"operator": "equal",
+			"operand": "text.html.markdown, text.html"
+		}]
 	},
 
 // WORKSPACE -------------------------------------------------------------------
@@ -91,33 +98,10 @@
 	// Open User Keybindings
 	{
 		"keys": ["super+."],
-		"command": "open_file",
-		"args":
+		"command": "edit_settings", "args":
 		{
-			"contents": "[\n	$0\n]\n",
-			"file": "${packages}/User/Default ($platform).sublime-keymap"
-		}
-	},
-
-	// Open Default Preferences
-	{
-		"keys": ["super+shift+,"],
-		"command": "open_file",
-		"args":
-		{
-			"contents": "[\n	$0\n]\n",
-			"file": "${packages}/Default/Preferences.sublime-settings"
-		}
-	},
-
-	// Open Default Keybindings
-	{
-		"keys": ["super+shift+."],
-		"command": "open_file",
-		"args":
-		{
-			"contents": "[\n	$0\n]\n",
-			"file": "${packages}/Default/Default ($platform).sublime-keymap"
+			"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+			"default": "[\n\t$0\n]\n"
 		}
 	},
 
@@ -127,15 +111,38 @@
 		"command": "new_file"
 	},
 
+	// Reopen last closed tab (Chrome style)
+	{
+		"keys": ["super+shift+t"],
+		"command": "reopen_last_file"
+	},
+
 	// Open New Window
 	{
 		"keys": ["super+n"],
 		"command": "new_window"
 	},
 
+	// Show/Hide Console
+	{
+		"keys": ["ctrl+`"],
+		"command": "show_panel",
+		"args":
+		{
+			"panel": "console",
+			"toggle": true
+		}
+	},
+
 // BUILD -----------------------------------------------------------------------
 
-	// Markdown preview
+	// Build
+	{
+		"keys": ["alt+b"],
+		"command": "build"
+	},
+
+	// Build markdown with Markdown Preview
 	{
 		"keys": ["alt+m"],
 		"command": "markdown_preview",
@@ -143,6 +150,58 @@
 		{
 			"target": "browser",
 			"parser":"github"
+		}
+	},
+
+	// Open Terminal Window at location
+	{
+		"keys": ["ctrl+shift+t"],
+		"command": "open_terminal"
+	},
+
+	// Open Terminal Window at project root
+	{
+		"keys": ["super+shift+ctrl+t"],
+		"command": "open_terminal_project_folder"
+	},
+
+	// Open Finder Window at location
+	{
+		"keys": ["ctrl+shift+f"],
+		"command": "open_finder"
+	},
+
+	// Spell check
+	{
+		"keys": ["ctrl+s+c"],
+		"command": "toggle_setting",
+		"args":
+		{
+			"setting": "spell_check"
+		}
+	},
+
+	// One Column
+	{
+		"keys": ["super+ctrl+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cells": [[0, 0, 1, 1]],
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0]
+		}
+	},
+
+	// Two Columns
+	{
+		"keys": ["super+ctrl+2"],
+		"command": "set_layout",
+		"args":
+		{
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0]
 		}
 	},
 

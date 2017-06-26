@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-{% highlight ${1:LANGUAGE} %}
-${2:CODE}
-{% endhighlight %}${3}
-]]></content>
-	<tabTrigger>codeblock</tabTrigger>
-	<scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

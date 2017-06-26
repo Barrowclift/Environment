@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[&#8212;${1}]]></content>
-	<tabTrigger>dash</tabTrigger>
-	<scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
-</snippet>

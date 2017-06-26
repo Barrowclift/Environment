@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-$1
-===============================================================================================================
-$2
-]]></content>
-	<tabTrigger>header</tabTrigger>
-	<scope>source.markdown</scope>
-</snippet>
