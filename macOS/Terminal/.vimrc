@@ -35,6 +35,10 @@ set tabstop=4			" The number of columns a tab is counted for
 set shiftwidth=4		" How many columns indented
 set backspace=indent,eol,start	" Make backspace work like all other apps
 
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 " Fuck python's awful 8 column tabstop, and fuck the devs that made that option forcibly overwrite user-defined settings
+
+set list listchars=tab:\ \ " The cursor rests at the beginning of tabs instead of the end, like it should.
+
 " Colors ----------------------------------
 syntax enable
 colorscheme monokai
