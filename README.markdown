@@ -51,7 +51,7 @@ To install yourself, first [download the Pulse Secure](https://raw.githubusercon
 
 ### Automator
 
-I also rely heavily on Automator tasks for small tasks like [Merging PDFs](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Merge%20PDFs.workflow), [Splitting PDFs into PNGs](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Split%20PDF%20into%20PNGs.workflow), [Making PDFs from Selected Images](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Make%20PDF%20from%20images.workflow), etc. You can find those and some other useful utilities there.
+I also rely heavily on Automator tasks for small tasks like [Merging PDFs](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Merge%20PDFs.zip), [Splitting PDFs into PNGs](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Split%20PDF%20into%20PNGs.zip), [Making PDFs from Selected Images](https://raw.githubusercontent.com/barrowclift/Environment/master/macOS/Automator%20Services/Make%20PDF%20from%20images.zip), etc. You can find those and some other useful utilities there.
 
 Windows
 -------
