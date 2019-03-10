@@ -78,14 +78,3 @@ To try it out yourself:
 ### Keyboard Shortcuts
 
 I use [AutoHotKey](https://autohotkey.com) to edit the standard Windows shortcuts to match the macOS's shortcuts since they're *much* easier to perform (pinkies are nowhere near as dexterous as thumbs). The provided script changes Windows text selection, save, cut, copy, paste, and undo/redo shortcuts to macOS's standards. Install [AutoHotKey](https://autohotkey.com), run it, right click it's icon in the Notification Area, then click "Edit this Script". Copy and paste the contents of [Modified_hotkey.ahk](https://raw.githubusercontent.com/barrowclift/Environment/master/Windows/Modified_hotkey.ahk)) into the new window, save, then right click the icon again and click "Reload This Script". You're comfortable shortcuts should now work!
-
-Sublime Text
-------------
-
-### Markdown Build System
-
-After years of research and refinements, I've completed the first Markdown stylesheet I truly adore: Marcdown. [Check it out here](https://barrowclift.me/marcdown/), I think you'll agree.
-
-### Preferences
-
-I've accumulated loads of shortcuts and custom tweaks like auto-closing HTML Tags, wrapping text blocks, workspace manipulations, etc. over the years. Additionally included is a slightly modified version of the [Monokai Extended](https://packagecontrol.io/packages/Monokai%20Extended) color scheme to better match the original Monokai's background and comment foreground colors.
